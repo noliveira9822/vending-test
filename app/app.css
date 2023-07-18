@@ -1,0 +1,246 @@
+/* app css stylesheet */
+
+/* define the screen resolution */
+html, body {
+  width: 1080px;
+  height: 1920px;
+}
+
+body { background-color: white; }
+
+header {
+  display: flex; 
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 220px;
+  width: 1080px;
+}
+
+img {
+  margin: auto;
+  display: block;
+  
+}
+
+.forward-button {
+  display: flex;
+  width: 399px;
+  height: 90px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 5px;
+  vertical-align: bottom;
+}
+
+.forward-button-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+.forward-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+/* hides underline */
+.no-underline {
+  text-decoration: none;
+}
+
+/* products grid element */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+}
+
+.products-tiles-big {
+  width: 344px;
+  height: 443px; 
+  position: relative;
+  box-shadow: 0px 4px 30px rgba(108.38, 103.86, 103.86, 0.20)
+}
+
+.products-rectangle {
+  width: 342px;
+  height: 441px;
+  left: 1px;
+  top: 1px;
+  position: absolute;
+  background: white;
+  border: 0.50px solid
+}
+
+.product-inner-frame {
+  left: 38px;
+  top: 32.49px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  display: inline-flex
+}
+
+.product-image-rectangle {
+  width: 266.12px;
+  height: 223.84px;
+  background: #F3F2F0
+}
+
+.product-desc {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: flex"
+}
+
+.product-name {
+  width: 267px;
+  text-align: center;
+  color: #231F20;
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.product-price {
+  width: 87px;
+  color: #231F20;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.product-price-add-frame {
+  width: 266px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex
+}
+
+.product-add-btn {
+  height: 53px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #231F20;
+  border-radius: 50px;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 17px;
+  display: flex
+}
+
+.btn-go-to-checkout {
+  width: 399px;
+  height: 90px;
+  padding: 10px;
+  background: #231F20;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex
+}
+
+/* mudar aqui para centrar a lista*/
+.outer-frame {
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 35px;
+  display: flex
+}
+
+.inner-frame {
+  display: flex;
+  width: 766px;
+  height: 443px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 78px;
+  flex-wrap: wrap;
+}
+
+.basket-background {
+  width: 915px;
+  height: 1386.36px;
+  background: #F3F2F0;
+  border-radius: 35px;
+  margin-top: 35px;
+}
+
+.order-summary {
+  color: #424242;
+  font-size: 40px;
+  font-family: Roboto;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin: 35px;
+}
+
+.basket-product-row {
+  margin: 35px;
+  height: 90px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 140px;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.basket-product-name{
+  width: 109.31px; 
+  height: 98.33px;
+  background: #8E8E8E
+}
+
+.basket-product-name-text {
+  width: fit-content;
+  color: #231F20;
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.basket-product-price {
+  width: fit-content;
+  color: #231F20;
+  font-size: 32px;
+  font-family: Open Sans;
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.products-checkout {
+  width: 475px;
+  height: 115px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  display: inline-flex;
+}

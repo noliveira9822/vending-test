@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+  <head>
+    <link
+      rel="stylesheet"
+      href="lib/html5-boilerplate/dist/css/normalize.css"
+    />
+    <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css" />
+    <link rel="stylesheet" href="../../app.css" />
+    <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+
+  <body ng-app="myApp.vending" ng-controller="VendingCtrl">
+    <div class="outer-frame">
+      <div class="inner-frame">
+        <div id="product-list" ng-repeat="product in products">
+          <div class="products-tiles-big">
+            <div class="products-rectangle"></div>
+            <div class="product-inner-frame">
+              <div class="product-image-rectangle"></div>
+              <div class="product-desc">
+                <div class="product-name">{{product.name}}</div>
+                <div class="product-price-add-frame">
+                  <div class="product-price">{{product.price}}</div>
+                  <div class="product-add-btn">
+                    <div
+                      class="Vector"
+                      style="width: 35px; height: 29px; background: white"
+                    ></div>
+                    <div
+                      class="Add"
+                      style="
+                        text-align: center;
+                        color: white;
+                        font-size: 25px;
+                        font-family: Roboto;
+                        font-weight: 700;
+                        word-wrap: break-word;
+                      "
+                    >
+                      Add
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="forward-button-div">
+      <a href="#!/basket" class="no-underline">
+        <button class="forward-button" , type="button">
+          <label class="forward-button-text"> Go to checkout </label>
+        </button>
+      </a>
+    </div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="pages/vending/vending.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="lib/html5-boilerplate/dist/css/normalize.css"
+    />
+    <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css" />
+    <link rel="stylesheet" href="../../app.css" />
+    <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="myApp.checkout" ng-controller="CheckoutCtrl">
+      <div
+        style="
+          text-align: center;
+          color: #231f20;
+          font-size: 50px;
+          font-family: Roboto;
+          font-weight: 700;
+          word-wrap: break-word;
+        "
+      >
+        Success
+      </div>
+      <div class="products-checkout">
+        <div id="product-basket" ng-repeat="product in cart">
+          <div style="width: 137px; height: 115px; position: relative">
+            <img
+              style="
+                width: 112px;
+                height: 86px;
+                left: 0px;
+                top: 29px;
+                position: absolute;
+              "
+              src="https://via.placeholder.com/112x86"
+            />
+            <div
+              style="
+                width: 50px;
+                height: 50px;
+                left: 87px;
+                top: 0px;
+                position: absolute;
+              "
+            >
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  left: 0px;
+                  top: 0px;
+                  position: absolute;
+                  background: white;
+                  border-radius: 5.05px;
+                "
+              ></div>
+              <div
+                style="
+                  left: 17.17px;
+                  top: 8.59px;
+                  position: absolute;
+                  text-align: center;
+                  color: #231f20;
+                  font-size: 27.78px;
+                  font-family: Roboto;
+                  font-weight: 400;
+                  word-wrap: break-word;
+                "
+              >
+                {{product.stock}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          text-align: center;
+          color: #231f20;
+          font-size: 45px;
+          font-family: Roboto;
+          font-weight: 400;
+          word-wrap: break-word;
+          margin: 70px;
+        "
+      >
+        We would love your feedback.
+      </div>
+
+      <div
+        style="
+          width: 722px;
+          height: 116.79px;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 34.51px;
+          display: inline-flex;
+        "
+      ></div>
+
+      <div
+        style="
+          text-align: center;
+          color: #231f20;
+          font-size: 50px;
+          font-family: Roboto;
+          font-weight: 600;
+          word-wrap: break-word;
+        "
+      >
+        Please collect your purchase
+      </div>
+
+      <div
+        style="left: 406px; bottom: 200px; display: flex; position: absolute"
+      >
+        <img src="../../img/Fridge.svg" />
+      </div>
+    </div>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="pages/vending/vending.js"></script>
+  </body>
+</html>

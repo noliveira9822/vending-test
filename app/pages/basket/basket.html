@@ -1,0 +1,65 @@
+<html>
+<head>
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="../../app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body ng-app="myApp.basket" ng-controller="BasketCtrl">
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <div class="basket-background">
+            <div>
+                <div class="order-summary">Order summary</div>
+                <div class="Line4" style="width: 803px; height: 0px; border: 0.50px #B6B6B6 solid; margin-left: 35px;"</div>
+                <div id="product-basket" ng-repeat="product in cart">
+                    <div class="basket-product-row">
+                        <div class="Frame17960" style="justify-content: flex-start; align-items: center; gap: 30px; display: flex">
+                          <div class="basket-product-name"></div>
+                          <div class="basket-product-name-text">{{product.name}}</div>
+                        </div>
+                        <div class="Frame17962" style="justify-content: flex-end; align-items: flex-end; gap: 45px; display: flex">
+                          <div class="basket-product-price">{{product.price}}</div>
+                        </div>
+                      </div>
+                </div>
+                <div style="display: flex; flex-direction: column; position: relative; bottom: 0px; right: 5px; align-items: end; align-content: end;">
+          <div style="text-align: right; color: #EB320A; font-size: 30px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Discounts -£{{discount}}</div>
+          <div style="text-align: center; color: black; font-size: 40px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Total: </div>
+        </div>
+            </div>  
+        </div>
+
+        
+
+        <div style="display: flex; flex-direction: row; align-items: center; position: fixed; bottom: 0;">
+            <div class="ButtonsContinueShopping" style="width: 399px; height: 95px; padding: 10px; border-radius: 5px; border: 1px #231F20 solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex; margin: 5px;">
+                <div class="ContinueShopping" style="text-align: center; color: #231F20; font-size: 35px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                    <a href="#!/vending" class="no-underline">
+                          <label>
+                            Continue shopping
+                          </label>
+                      </a>
+                </div>
+              </div>
+            <div>
+                <div class="ButtonsPayCollect" style="width: 399px; height: 95px; padding: 10px; background: #231F20; border-radius: 5px; justify-content: center; align-items: center; gap: 10px; display: inline-flex; margin: 5px;">
+                    <div class="ConfirmPay" style="text-align: center; color: white; font-size: 35px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                        <a href="#!/checkout" class="no-underline">
+                              <label class="forward-button-text">
+                                Pay & Collect
+                              </label>
+                          </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="pages/vending/vending.js"></script>
+</body>
+</html>
